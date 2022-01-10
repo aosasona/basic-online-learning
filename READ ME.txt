@@ -1,0 +1,36 @@
+***INSTALLATION GUIDE FOR WEBSITE***
+
+NOTE : This was developed with a server running PHP Version 5.4, please change your host's 
+PHP version for best performance to either 5.4.3 or a little bit lower.
+
+I have included all database connection-related syntaxes and scripts in the function.php 
+files in the 'Siteadmin', 'Forgot-password' and main folder. Edit those to properly connect
+with your mySQL server.
+
+After entering your credentials (localhost, username, password), before anything else, run 
+'function.php'script, if you run into a problem with database creation, delete the part
+that says :
+
+//Create a new database 
+$db = "CREATE DATABASE global_it"
+mysql_query($db)
+
+This part is within the first 10 lines on each function.php script. Then, manually create a database
+and replace "global_it" with the name of this new database in the query 
+
+mysql_select_db("global_it") should now become mysql_select_db("name of new database")
+
+REMEMBER THAT THERE ARE 3 DIFFERENT FUNCTION.PHP FILES WHICH YOU NEED TO MODIFY.
+
+When creating a new course, any input you'll be entering into "Table Name" must :
+-be unique
+-be preferrably short
+-not have any space as the database will reject it
+
+Note : You can have multiple iterations for the same chapter show in the catalogue by simply
+recreating the chapter with the same name.
+
+FOR FURTHER ENQUIRIES : osasonaayodeji1@gmail.com
+REACH ME FOR A PAID UPGRADE ANYTIME TOO!
+
+NICE DOING BUSINESS WITH YOU!
